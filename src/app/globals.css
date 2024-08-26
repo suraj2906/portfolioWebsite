@@ -2,26 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: black;
+  color: white;
+  width:100%;
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html{
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.project-box {
+  border: 1px solid white;
+  width: 15vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+}
+
+.group:hover .project-box:hover {
+  height: 52.5vh;
+  width: 15vw;
+  
+  
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #252525;
+    border-radius: 10px;
   }
-}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image:-webkit-gradient(linear,
+                       left bottom,
+                       left top,
+                       color-stop(0.44, rgb(122,153,217)),
+                       color-stop(0.72, rgb(73,125,189)),
+                       color-stop(0.86, rgb(28,58,148)));
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+section{ 
+  height: 100vh;
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }
