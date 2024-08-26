@@ -7,7 +7,7 @@ import AISVG from '../../public/artificial-intelligence.svg'
 import researchSVG from '../../public/research.svg'
 import sslSVG from '../../public/hosting.svg'
 import AIproject from '../../public/AI-project.jpeg'
-import ProjectContainer from '@/components/projectContainer'
+import ProjectContainer from '@/components/ProjectContainer'
 
 export default function Home() {
 
@@ -29,6 +29,7 @@ export default function Home() {
               </div>
             </div> */}
             <ProjectContainer iconSVG={AISVG} projectBanner={AIproject} projectLink='https://ieeexplore.ieee.org/document/10201677/' alt='AI Image' />
+            {/* <ProjectContainer iconSVG={researchSVG} projectBanner={} projectLink='https://ieeexplore.ieee.org/document/10201677/' alt='Research Image' /> */}
             <div className='project-box relative overflow-hidden group/project'>
               <Image src={researchSVG} width={120} alt='Research Icon'/>
               <div className='hello-div absolute bottom-0 left-0 right-0 bg-black text-white flex items-center justify-center h-0 opacity-0 group-hover/project:h-full group-hover/project:opacity-100 transition-all duration-300 ease-in-out'>
