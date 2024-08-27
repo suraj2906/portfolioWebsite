@@ -19,6 +19,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@types/react-scroll": "^1.8.10",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
