@@ -16,9 +16,7 @@ html{
 }
 
 .project-box {
-  
-  width: 15vw;
-  height: 35vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,16 +24,6 @@ html{
   
 }
 
-.project-icon {
-  animation: opacity-animation 1.5s ease;
-}
-
-.group:hover .project-box:hover {
-  height: 52.5vh;
-  width: 15vw;
-  
-  
-}
 
 body::-webkit-scrollbar {
   width: 12px;

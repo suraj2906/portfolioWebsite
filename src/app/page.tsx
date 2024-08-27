@@ -22,12 +22,17 @@ export default function Home() {
 
         <section className='m-10 flex flex-col justify-center items-center snap-center h-[100vh] overflow-y-auto'>
           <p className='text-xl mb-5'>My Projects</p>
-          <div className='flex gap-5 group'>
+          <div className='flex gap-5 group md:flex-row flex-col'>
             <ProjectContainer iconSVG={AISVG} projectBanner={AIproject} projectLink='https://ieeexplore.ieee.org/document/10201677/' alt='AI Image' title="AI vs Real Voice Classification" />
             <ProjectContainer iconSVG={researchSVG} projectBanner={ResearchPaper} projectLink='https://ieeexplore.ieee.org/document/10201677/' alt='Research Image' title='Research Paper - Sentimental Analysis on Twitter Data using XLNet'/>
             <ProjectContainer iconSVG={sslSVG} projectBanner={WhiteBoard} projectLink='https://colab-white-board-client.vercel.app' alt='Whiteboard image' title='Collaborative WhiteBoard - using WebSockets'/>
           </div>
         </section>
+
+        <section className='h-[100vh] flex flex-col items-center justify-center snap-center overflow-y-auto'>
+          <p className='w-[70%] text-center text-2xl self-center'>Hi, my name is Suraj Shah, I am a AI/ML and Front-End Developer</p>
+        </section>
+
       </div>
     </GradientDiv>
   )
