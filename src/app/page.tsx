@@ -14,13 +14,13 @@ import WhiteBoard from '../../public/whiteboard.webp'
 export default function Home() {
 
   return (
-    <GradientDiv className={"text-white flex min-h-screen flex-col items-center justify-between z-10 js-radial"}>
+    <GradientDiv className={"text-white flex min-h-screen flex-col items-center justify-between z-10 js-radial scroll-smooth"}>
       <div className='flex flex-col snap-y snap-mandatory'>
-        <section className='h-[100vh] flex flex-col items-center justify-center snap-center overflow-y-auto'>
+        <section id='#about' className='h-[100vh] flex flex-col items-center justify-center snap-center overflow-y-auto'>
           <p className='w-[70%] text-center text-2xl self-center'>Hi, my name is Suraj Shah, I am a AI/ML and Front-End Developer</p>
         </section>
 
-        <section className='m-10 flex flex-col justify-center items-center snap-center h-[100vh] overflow-y-auto'>
+        <section id='projects' className='m-10 flex flex-col justify-center items-center snap-center h-[100vh] overflow-y-auto'>
           <p className='text-xl mb-5'>My Projects</p>
           <div className='flex gap-5 group md:flex-row flex-col'>
             <ProjectContainer iconSVG={AISVG} projectBanner={AIproject} projectLink='https://ieeexplore.ieee.org/document/10201677/' alt='AI Image' title="AI vs Real Voice Classification" />

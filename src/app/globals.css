@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  @font-face {
+    font-family: 'Vintage';
+    src: url('../fonts/BasheqVintageDemoVersionRegular-gwpmE.otf');
+  }
+  @font-face {
+    font-family: 'Cruell';
+    src: url('../fonts/CruellDemo-WyeLv.otf');
+  }
+  @font-face {
+    font-family: 'Psycha';
+    src: url('../fonts/PsychaRegular-Yq334.otf');
+  }
+  @font-face {
+    font-family: 'Rigam';
+    src: url('../fonts/RigamMedium-LVJ9n.otf');
+  }
+  
+
 body{
   background-color: #140c3d;
   color: red;
