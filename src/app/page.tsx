@@ -14,7 +14,7 @@ import WhiteBoard from '../../public/whiteboard.webp'
 export default function Home() {
 
   return (
-    <GradientDiv className={"text-white bg-red-600 flex min-h-screen flex-col items-center justify-between z-10 js-radial"}>
+    <GradientDiv className={"text-white flex min-h-screen flex-col items-center justify-between z-10 js-radial"}>
       <div className='flex flex-col snap-y snap-mandatory'>
         <section className='h-[100vh] flex flex-col items-center justify-center snap-center overflow-y-auto'>
           <p className='w-[70%] text-center text-2xl self-center'>Hi, my name is Suraj Shah, I am a AI/ML and Front-End Developer</p>

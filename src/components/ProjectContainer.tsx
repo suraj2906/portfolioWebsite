@@ -36,7 +36,7 @@ function ProjectContainer({iconSVG, projectBanner, projectLink, alt, title}: Pro
         viewport={{ once: true }}
         ></motion.div>
         <Link href={projectLink} target='_blank'>
-            <Image src={iconSVG} width={120} alt={alt} className='project-icon'/>
+            <Image src={iconSVG} width={120} alt={alt} className='w-[30%] m-auto sm:w-[50%]'/>
             <div className='w-full p-0 m-0 absolute bottom-0 left-0 right-0 text-center bg-black text-white flex flex-col h-0 opacity-0 group-hover/project:h-[110%] group-hover/project:opacity-100 transition-all duration-300 ease-in-out'>
                 <Image src={projectBanner} alt='AI Project poster' width={400} />
                 <p className='m-3'>{title}</p>
