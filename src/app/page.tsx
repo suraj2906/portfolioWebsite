@@ -1,7 +1,6 @@
 'use client'
 
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import GradientDiv from '@/components/GradientDiv'
 import AISVG from '../../public/artificial-intelligence.svg'
 import researchSVG from '../../public/research.svg'
@@ -10,11 +9,24 @@ import AIproject from '../../public/AI-project.jpeg'
 import ProjectContainer from '@/components/ProjectContainer'
 import ResearchPaper from '../../public/twitter.webp'
 import WhiteBoard from '../../public/whiteboard.webp'
+import ModelScene from '@/components/ModelScene'
+import { NavBar } from '@/components/NavBar'
 
 export default function Home() {
 
+  const [isModelLoaded, setIsModelLoaded] = useState(false);
+
+  const handleLoadingComplete = () => {
+    setIsModelLoaded(true);
+  }
+
+
   return (
     <GradientDiv className={"text-white flex min-h-screen flex-col items-center justify-between z-10 js-radial scroll-smooth"}>
+      <ModelScene onLoadingComplete={handleLoadingComplete}/>
+      {isModelLoaded ? 
+      <>
+      <NavBar />
       <div className='flex flex-col snap-y snap-mandatory'>
         <section id='#about' className='h-[100vh] flex flex-col items-center justify-center snap-center overflow-y-auto'>
           <p className='w-[70%] text-center text-2xl self-center'>Hi, my name is Suraj Shah, I am a AI/ML and Front-End Developer</p>
@@ -33,7 +45,7 @@ export default function Home() {
           <p className='w-[70%] text-center text-2xl self-center'>Hi, my name is Suraj Shah, I am a AI/ML and Front-End Developer</p>
         </section>
 
-      </div>
+      </div></> : <div className='font-vintage h-[100vh] text-6xl flex justify-center items-center'>Loading Model</div>}
     </GradientDiv>
   )
 }
